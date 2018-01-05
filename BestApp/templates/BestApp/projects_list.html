@@ -1,0 +1,7 @@
+{% for project in projects %}
+    <div id={{project.id}} class='project linkOFF'>
+        <!--<a  href = "/BestApp/project_detail/{{project.id}}/"> {{project.code}} - {{project.name}} </a>
+        -->
+        {{project.code}} - {{project.name}}
+    </div>
+{% endfor %}

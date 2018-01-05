@@ -1,0 +1,19 @@
+
+<div>
+{% for output in outputs %}
+    <div id="{{"output_"|add:""}}{{output.id}}" onclick=getActivitiesFromOutput("{{output.id}}") >
+        <h2>{{output.name}}</h2>
+        <div id="activity_{{"output_"|add:""}}{{output.id}}"></div>
+        <script>
+         //console.debug("Activities_list");
+        gantt.addTask({
+        id:{{output.id}},
+        text:"{{output.name}}",
+         start_date:"01-12-2017",
+        duration:28
+        }, "BEST", {{output.id}});
+        </script>
+    </div>
+{% endfor %}
+</div>
+

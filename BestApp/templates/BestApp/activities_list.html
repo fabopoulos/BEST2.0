@@ -1,0 +1,17 @@
+<script>//gantt.clearAll();</script>
+{% for activitie in activities %}
+    <!--
+    <div id={{activitie.id}} >
+    <h3>{{activitie}}</h3>
+    </div>
+    -->
+    <script>
+        //console.debug("Activities_list");
+        gantt.addTask({
+        id:{{activitie.id}},
+        text:"{{activitie.name}}",
+        start_date:"01-12-2017",
+        duration:28
+        }, "project_1", {{activitie.id}});
+    </script>
+{% endfor %}

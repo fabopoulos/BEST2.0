@@ -1,0 +1,30 @@
+
+WGS84
+srid/EPSG:4326
+
+QGIS :
+ESPG : 3857
+
+#TODO Formation
+
+1 - Se documenter sur le framework Angular JS et ses librairies
+    https://angular.io/
+
+
+    NgModules Class ( AppModule) @NgModule decorator
+
+
+2 - Se documenter sur Django Rest Framework
+
+
+3 - GIT
+    3.1 Avoir un compte GIT
+    3.2 Paramétrer PyCharm avec GIT
+
+
+#TODO Modele
+    1 - ajouter les tables
+        Objectifs
+        Activités
+        Indicateurs
+        Type d'indicateurs
